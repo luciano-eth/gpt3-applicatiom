@@ -1,3 +1,4 @@
 # buildspace 
 ### Welcome 👋
-This is the starter template for the [build your own AI writing assistant w/ GPT-3](https://buildspace.so/builds/ai-writer) project.
+This is my first GPT3, tried a lot of different things, ultimately decided to go with a app that analyze the ingredients of any given product. For example your preferred shampoo (mine is Shea Moisture) or even the food you consume. 
+A little bit about the app - i had to link it through an OpenAI API and add keys for Railway.app to be able to access OpenAI. 
