@@ -8,9 +8,9 @@ const openai = new OpenAIApi(configuration);
 
 const basePromptPrefix = 
 `
-Create a list of interview questions both technical and non-technical in relation to 
+Determine if product should be avoided or not, based on it's ingredients and potensial allgeries. Ideally the product should not have: synthethic fragrances, animal derviatives, artificial colors, no harsh detergents, propylene glycol, petrolatum, mineral oils, sulphates, silicones, EDTA, phtthalates, triclosan, parabens
 
-Company:
+Product:
 `
 ;
 const generateAction = async (req, res) => {
@@ -30,11 +30,11 @@ const generateAction = async (req, res) => {
 
   const secondPromt =  
 `
-  Take the table of contents and company of the interview below and generate a blog post written in thwe style of Paul Graham. Give a answer for each interview question. Make it comprehensive and take into account answers from Qoura and Stackoverflow. Make it really compelling.
+  Take the table  of the interview below and generate a blog post written in the style of drugs.com. Give a comprehensive and concise essay, you can take info primarly from drugs.com about the relevant ingredients. 
 
   Title: ${req.body.userInput}
 
-  Table of Contents: ${basePromptOutput.text}
+  Verdict: ${basePromptOutput.text}
 
   Interview Question: 
 `

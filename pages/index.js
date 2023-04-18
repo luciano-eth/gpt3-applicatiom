@@ -35,13 +35,12 @@ const callGenerateEndpoint = async () => {
       <div className="container">
         <div className="header">
           <div className="header-title">
-            <h1>Nail the interview</h1>
+            <h1>Product ingredient analyzer  </h1>
           </div>
           <div className="header-subtitle">
-            <h2>Input the the company you want to work at</h2>
+            <h2>Input the product you want to analyze </h2>
           </div>
         </div>
-        {/* Add this code here*/}
         <div className="prompt-container">
           <textarea 
           placeholder="start typing here"
